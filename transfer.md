@@ -46,6 +46,7 @@ https://api.mixin.one/assets/3596ab64-a575-39ad-964e-43b37f44e8cb
 |pin|	String:加密 PIN|
 |trace_id|	String: 每笔交易的id（唯一标识）|
 |memo|	String:备注，少于 140 个字节|
+
 请求体示例：
 
 ```json
@@ -85,6 +86,7 @@ https://api.mixin.one/assets/3596ab64-a575-39ad-964e-43b37f44e8cb
 |opponent_id|	String: 交易接收方的 user_id（唯一标识）|
 |amount|	String: 转入数量|
 |trace_id|	String: 每笔交易的id（唯一标识）|
+
 请求体示例
 
 ```json
@@ -142,6 +144,7 @@ https://api.mixin.one/assets/3596ab64-a575-39ad-964e-43b37f44e8cb
 |memo|	String: 交易备注，140 字节以内|
 |pin|	String: 加密 PIN 码|
 |trace_id|	String: 每笔交易的id（唯一标识）|
+
 请求体参数示例
 
 ```json

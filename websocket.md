@@ -57,13 +57,14 @@ func ConnectMixinBlaze(token string) (*websocket.Conn, error) {
 ```
 > 注意，这里的 data 跟 普通的文本消息类型一模一样，只不过 内容是 `markdown` 格式，不熟悉 `markdown` 语法的朋友可以忽视了。
 #### PLAIN_IMAGE
+> 图片消息
 ```json
 {
   "id": "UUID",
   "action": "CREATE_MESSAGE",
   "params": {
-    "conversation_id": "UUID"
-    "category": "PLAIN_IMAGE"
+    "conversation_id": "UUID",
+    "category": "PLAIN_IMAGE",
     "status": "SENT",
     "message_id": "UUID",
     "data": "Base64 encoded data"
@@ -138,7 +139,7 @@ func ConnectMixinBlaze(token string) (*websocket.Conn, error) {
   "action": "CREATE_MESSAGE",
   "params": {
     "conversation_id": "UUID",
-    "category": "PLAIN_CONTACT"
+    "category": "PLAIN_CONTACT",
     "status": "SENT",
     "message_id": "UUID",
     "data": "Base64 encoded data"

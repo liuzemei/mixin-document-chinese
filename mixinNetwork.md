@@ -84,7 +84,9 @@ https://api.mixin.one/network/assets/c94ac88f-4671-3976-b60a-09064f1811e8
 |offset|	String: 格式为 RFC3339Nano 或者 UTC 或者 non UTC 的时间格式|
 |asset|	String: [选填]（唯一标识）返回所有的网络快照或者指定的资产快照|
 |order|	String: [选填]ASC 或者 DESC ，默认为 DESC|
-|offset| 例子：`2006-01-02T15:04:05.999999999Z` *或* `2006-01-02T15:04:05.999999999%2B07:00` *或* `2006-01-02T15:04:05.999999999-07:00`
+|offset| 例子：`2006-01-02T15:04:05.999999999Z` *或* `2006-01-02T15:04:05.999999999%2B07:00` *或* `2006-01-02T15:04:05.999999999-07:00` |
+
+
 请求示例
 ```
 https://api.mixin.one/network/snapshots?limit=10&offset=2018-05-29T16:30:24.845515732%2B08:00
@@ -170,6 +172,7 @@ header 不需要带 Token
 |limit|	Integer:[选填]最大为 500|
 |offset|	String:[选填]同上的 offset(Network Snapshot)|
 |asset|	String:[选填] asset_id 唯一标识|
+
 请求示例
 
 ```json

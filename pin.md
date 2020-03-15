@@ -8,6 +8,7 @@ PIN用于管理用户的地址、资产等。Mixin网络用户没有默认密码
 | - | -|
 |old_pin|	String: 老加密 PIN 码 或 为空字符串|
 |pin|	String: 新的加密 PIN 码|
+
 ```json
 {
   "old_pin":"",
@@ -53,9 +54,11 @@ PIN用于管理用户的地址、资产等。Mixin网络用户没有默认密码
 |请求体参数|	介绍|
 | - | - |
 |pin|	String: 加密 PIN 码|
+
 请求体示例：
 ```json
-{"pin":"rIqULBd+xaiLuKImKAI7r72azK0zMPy7dIw1fQfhYskWKxkObZvOv5E6A8bACaws"}
+{
+  "pin":"rIqULBd+xaiLuKImKAI7r72azK0zMPy7dIw1fQfhYskWKxkObZvOv5E6A8bACaws"}
 ```
 响应示例：
 

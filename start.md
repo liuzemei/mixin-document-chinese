@@ -139,6 +139,7 @@ Mixin API 只会使用 20x 和 500，你需要注意，500错误，可能是由 
 |500|	500|	内部服务器出错|
 |500|	7000	|服务器错误(Blaze server error)|
 |500|	7001	|操作超时(The blaze operation timeout.)|
+
 一个错误相应的例子：
 ```json
 {

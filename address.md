@@ -11,6 +11,7 @@
 |tag|	String: 可以为空，EOS 账户的 tag 或 memo |
 |label|	String:不能为空，可以为 Mixin 或者其他描述 最多 64 位|
 |pin|	String: PIN加密|
+
 请求体参数示例
 
 ```json
