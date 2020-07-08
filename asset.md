@@ -71,9 +71,9 @@ https://api.mixin.one/assets
 ```
 
 ## Read Asset Fee（获取资产提现手续费）
-读取用户的所有资产。存款地址可能在这个api中不返回，使用/assets/:id来获取存款地址。
+读取资产的提现手续费
 
-`GET /assets`
+`GET /assets/:id/fee`
 
 请求示例
 ```
