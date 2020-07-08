@@ -97,7 +97,7 @@ POST /conversations/:id/rotate
 | name        | `String: 群聊名称`                  |
 | announcement | `String: 群聊公告` |
 
-请求体参数示例
+请求体参数示例(仅支持群聊传参)
 
 ```json
 {
@@ -143,7 +143,7 @@ POST /conversations/:id/rotate
 ## Update Conversation（更新群聊名称和公告）
 更新一个群聊的 名称 和 公告。
 ```
-POST /conversations/:id/rotate
+POST /conversations/:id
 ```
 
 | 请求体参数      | 介绍                                                         |
@@ -254,8 +254,8 @@ POST /conversations/:id/participants/:action
 | id        | `String: conversation_id`                  |
 | action          | `String: 取值为 "ADD"(添加) "REMOVE"(移除) "JOIN"(加入) "ROLE"` |
 | participants    | `JSON Array: 包含 role(角色), user_id(用户id)` |
-| role            | `String: 为空"" 或者 "ADMIN"(管理员)`                        |
-| user_id         | `String: 唯一标识，用户 id`                                  |
+| role            | `String: 描述（participants）为空"" 或者 "ADMIN"(管理员)`                        |
+| user_id         | `String: 描述（participants）唯一标识，用户 id`                                  |
 
 > conversation_id: 正常的UUID用于“组”对话，但是唯一的UUID用于“联系人”对话。
 
